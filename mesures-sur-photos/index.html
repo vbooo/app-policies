@@ -1,9 +1,9 @@
-<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Confidentialité · Privacy · Privacidad · Privacidade</title><link rel="stylesheet" href="style.css"><main><h1>Mesures sur photos</h1><nav aria-label="Language"><p><a href="fr.html" lang="fr" hreflang="fr">Français</a></p><p><a href="en.html" lang="en" hreflang="en">English</a></p><p><a href="es.html" lang="es" hreflang="es">Español</a></p><p><a href="pt-BR.html" lang="pt-BR" hreflang="pt-BR">Português do Brasil</a></p><p><a href="id.html" lang="id" hreflang="id">Bahasa Indonesia</a></p></nav></main><script>
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Confidentialité · Privacy · Privacidad · Privacidade</title><link rel="stylesheet" href="style.css"><main><h1>Mesures sur photos</h1><nav aria-label="Language"><p><a href="fr.html" lang="fr" hreflang="fr">Français</a></p><p><a href="en.html" lang="en" hreflang="en">English</a></p><p><a href="es.html" lang="es" hreflang="es">Español</a></p><p><a href="pt-BR.html" lang="pt-BR" hreflang="pt-BR">Português do Brasil</a></p><p><a href="id.html" lang="id" hreflang="id">Bahasa Indonesia</a></p><p><a href="hi.html" lang="hi" hreflang="hi">हिन्दी</a></p></nav></main><script>
 const preferred = navigator.languages || [navigator.language];
 let language = 'en';
 for (const tag of preferred) {
  const base = tag.toLowerCase().split('-')[0];
- if (['fr','en','es','pt','id','in'].includes(base)) { language = base === 'pt' ? 'pt-BR' : base === 'in' ? 'id' : base; break; }
+ if (['fr','en','es','pt','id','in','hi'].includes(base)) { language = base === 'pt' ? 'pt-BR' : base === 'in' ? 'id' : base; break; }
 }
 location.replace(language + '.html');
 </script></html>
